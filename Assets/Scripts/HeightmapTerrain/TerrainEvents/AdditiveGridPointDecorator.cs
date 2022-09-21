@@ -13,4 +13,8 @@ public class AdditiveGridPointDecorator : GridPointDecorator
     public override void Decorate(GridPoint _gridPoint) {
         _gridPoint.height += addAmount;
     }
+
+    public override void UnDecorate(GridPoint _gridPoint) {
+        _gridPoint.height -= addAmount;
+    }
 }

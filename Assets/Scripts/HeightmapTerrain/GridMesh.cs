@@ -25,9 +25,9 @@ public class GridMesh : MonoBehaviour
 		for (int i = 0, y = 0; y < height; y++) {
 			for (int x = 0; x < width; x++, i += 6) {
                 Vector3 coord1 = GetVertexPosition(_grid[x,y], _pointWidth);
-                Vector3 coord2 = GetVertexPosition(_grid[x+1,y], _pointWidth);;
-                Vector3 coord3 = GetVertexPosition(_grid[x,y+1], _pointWidth);;
-                Vector3 coord4 = GetVertexPosition(_grid[x+1,y+1], _pointWidth);;
+                Vector3 coord2 = GetVertexPosition(_grid[x+1,y], _pointWidth);
+                Vector3 coord3 = GetVertexPosition(_grid[x,y+1], _pointWidth);
+                Vector3 coord4 = GetVertexPosition(_grid[x+1,y+1], _pointWidth);
 
 				vertices[i] = coord1;
                 vertices[i+1] = coord3;
